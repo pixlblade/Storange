@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "storange:block/machine_block" }
+  }
+}
