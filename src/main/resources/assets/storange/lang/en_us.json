@@ -1,4 +1,7 @@
 {
   "item.storange.orange": "Orange",
-  "block.storange.machine_block": "Machine Block"
+  "block.storange.machine_block": "Machine Block",
+  "itemGroup.storange.general": "Storange",
+  "item.storange.hammer": "Hammer",
+  "item.storange.iron_plate": "Iron Plate"
 }
