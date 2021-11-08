@@ -3,5 +3,10 @@
   "block.storange.machine_block": "Machine Block",
   "itemGroup.storange.general": "Storange",
   "item.storange.hammer": "Hammer",
-  "item.storange.iron_plate": "Iron Plate"
+  "item.storange.iron_plate": "Iron Plate",
+  "item.storange.mini_silicon_wafer": "Mini Silicon Wafer",
+  "item.storange.processor": "Processor",
+  "item.storange.processor_chip": "Processor Chip",
+  "item.storange.silicon_wafer": "Silicon Wafer",
+  "item.storange.transistor": "Transistor"
 }
