@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#S#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "storange:iron_plate"
+        },
+        "S": {
+            "item": "storange:hammer"
+        }
+    },
+    "result": {
+        "item": "storange:machine_block",
+        "count": 1
+    }
+}

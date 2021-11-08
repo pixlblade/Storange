@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#R#",
+        "#S#",
+        "#R#"
+    ],
+    "key": {
+        "#": {
+            "item": "storange:transistor"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "S": {
+            "item": "storange:iron_plate"
+        }
+    },
+    "result": {
+        "item": "storange:processor_chip",
+        "count": 1
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#S#",
+        "RZR",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "storange:processor_chip"
+        },
+        "S": {
+            "item": "storange:silicon_wafer"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "Z": {
+            "item": "minecraft:slime_ball"
+        }
+    },
+    "result": {
+        "item": "storange:processor",
+        "count": 1
+    }
+}
