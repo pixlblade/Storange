@@ -1,11 +1,20 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "storange:hammer_recipe",
     "ingredients": [
         {
             "item": "storange:hammer"
         },
         {
-            "item": "minecraft:sand"
+            "item": "storange:silicon_pellet"
+        },
+        {
+            "item": "storange:silicon_pellet"
+        },
+        {
+            "item": "storange:silicon_pellet"
+        },
+        {
+            "item": "storange:silicon_pellet"
         }
     ],
     "result": {

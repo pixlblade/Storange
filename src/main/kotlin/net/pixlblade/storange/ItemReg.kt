@@ -19,8 +19,11 @@ object ItemReg {
     fun register(vararg items: Item) {
         var i = 0
         for(item in items) {
-            Registry.register(Registry.ITEM, Identifier(namespace, ItemList[i]), items[i])
+            Registry.register(Registry.ITEM, makeID(ItemList[i]), items[i])
             i++
         }
+    }
+    fun makeID(name: String): Identifier {
+        return Identifier(namespace, name)
     }
 }

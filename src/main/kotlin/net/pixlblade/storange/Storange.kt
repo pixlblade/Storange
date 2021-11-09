@@ -9,6 +9,8 @@ import net.minecraft.block.Material
 import net.minecraft.item.*
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
+import net.pixlblade.storange.items.HammerItem
+import net.pixlblade.storange.recipes.HammerRecipeSerializer
 
 // Main object for initializing all items.
 object Storange : ModInitializer {
@@ -17,27 +19,32 @@ object Storange : ModInitializer {
 
     // Items
     val Orange = Item(FabricItemSettings().group(StorangeGroup).food(FoodComponent.Builder().hunger(4).build()))
-    val Hammer = ItemReg.make("hammer")
+    val Hammer = HammerItem(FabricItemSettings().group(StorangeGroup).maxDamage(100))
     val IronPlate = ItemReg.make("iron_plate")
     val MiniSiliconWafer = ItemReg.make("mini_silicon_wafer")
     val Processor = ItemReg.make("processor")
     val ProcessorChip = ItemReg.make("processor_chip")
     val SiliconWafer = ItemReg.make("silicon_wafer")
     val Transistor = ItemReg.make("transistor")
+    val SiliconPellet = ItemReg.make("silicon_pellet")
 
     // Blocks
     val MachineBlock = Block(FabricBlockSettings.of(Material.METAL).strength(5.0f))
 
     override fun onInitialize() {
         // Items
-        Registry.register(Registry.ITEM, Identifier("storange", "orange"), Orange)
-        ItemReg.register(Hammer, IronPlate, MiniSiliconWafer, Processor, ProcessorChip, SiliconWafer, Transistor)
+        Registry.register(Registry.ITEM, ItemReg.makeID("orange"), Orange)
+        Registry.register(Registry.ITEM, ItemReg.makeID("hammer"), Hammer)
+        ItemReg.register(IronPlate, MiniSiliconWafer, Processor, ProcessorChip, SiliconWafer, Transistor, SiliconPellet)
 
         // Blocks
-        Registry.register(Registry.BLOCK, Identifier("storange", "machine_block"), MachineBlock)
+        Registry.register(Registry.BLOCK, ItemReg.makeID("machine_block"), MachineBlock)
 
         // BlockItems
-        Registry.register(Registry.ITEM, Identifier("storange", "machine_block"), BlockItem(MachineBlock, FabricItemSettings().group(
+        Registry.register(Registry.ITEM, ItemReg.makeID("machine_block"), BlockItem(MachineBlock, FabricItemSettings().group(
             StorangeGroup)))
+
+        // Custom Recipes
+        Registry.register(Registry.RECIPE_SERIALIZER, ItemReg.makeID("hammer_recipe"), HammerRecipeSerializer())
     }
 }

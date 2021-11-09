@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:crafting_shapeless",
+    "type": "storange:hammer_recipe",
     "ingredients": [
         {
             "item": "storange:hammer"
