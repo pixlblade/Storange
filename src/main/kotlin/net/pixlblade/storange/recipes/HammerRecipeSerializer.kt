@@ -14,4 +14,3 @@ class HammerRecipeSerializer : ShapelessRecipe.Serializer() {
         return HammerRecipe(super.read(identifier, packetByteBuf))
     }
 }
-
