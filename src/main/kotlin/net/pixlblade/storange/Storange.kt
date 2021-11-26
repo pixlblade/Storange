@@ -10,6 +10,7 @@ import net.minecraft.item.*
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 import net.pixlblade.storange.items.HammerItem
+import net.pixlblade.storange.items.SiliconShaper
 import net.pixlblade.storange.recipes.HammerRecipeSerializer
 
 // Main object for initializing all items.
@@ -30,6 +31,7 @@ object Storange : ModInitializer {
 
     // Blocks
     val MachineBlock = Block(FabricBlockSettings.of(Material.METAL).strength(5.0f))
+    val SiliconShape = SiliconShaper(FabricBlockSettings.of(Material.METAL).strength(5.0f))
 
     override fun onInitialize() {
         // Items
@@ -39,10 +41,13 @@ object Storange : ModInitializer {
 
         // Blocks
         Registry.register(Registry.BLOCK, ItemReg.makeID("machine_block"), MachineBlock)
+        Registry.register(Registry.BLOCK, ItemReg.makeID("silicon_shaper"), SiliconShape)
 
         // BlockItems
         Registry.register(Registry.ITEM, ItemReg.makeID("machine_block"), BlockItem(MachineBlock, FabricItemSettings().group(
             StorangeGroup)))
+        Registry.register(Registry.ITEM, ItemReg.makeID("silicon_shaper"), BlockItem(
+            SiliconShape, FabricItemSettings().group(StorangeGroup)))
 
         // Custom Recipes
         Registry.register(Registry.RECIPE_SERIALIZER, ItemReg.makeID("hammer_recipe"), HammerRecipeSerializer())

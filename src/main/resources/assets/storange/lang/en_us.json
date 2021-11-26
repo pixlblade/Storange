@@ -9,5 +9,6 @@
   "item.storange.processor_chip": "Processor Chip",
   "item.storange.silicon_wafer": "Silicon Wafer",
   "item.storange.transistor": "Transistor",
-  "item.storange.silicon_pellet": "Silicon Pellet"
+  "item.storange.silicon_pellet": "Silicon Pellet",
+  "block.storange.silicon_shaper": "Silicon Shaper"
 }

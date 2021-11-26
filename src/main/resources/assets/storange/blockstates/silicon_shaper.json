@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "storange:block/silicon_shaper", "uvlock": true },
+    "facing=east": { "model": "storange:block/silicon_shaper", "y": 90, "uvlock": true },
+    "facing=south": { "model": "storange:block/silicon_shaper", "y": 180, "uvlock": true },
+    "facing=west": { "model": "storange:block/silicon_shaper", "y": 270, "uvlock": true }
+  }
+}

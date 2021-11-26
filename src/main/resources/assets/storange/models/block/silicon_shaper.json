@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "storange:block/machine_block",
+    "bottom": "storange:block/machine_block",
+    "front": "storange:block/siliconij/1",
+    "side": "storange:block/machine_block"
+  }
+}
