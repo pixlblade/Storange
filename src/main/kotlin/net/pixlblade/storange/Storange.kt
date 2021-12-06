@@ -12,6 +12,7 @@ import net.minecraft.util.registry.Registry
 import net.pixlblade.storange.blocks.SiliconInjector
 import net.pixlblade.storange.items.HammerItem
 import net.pixlblade.storange.blocks.SiliconShaper
+import net.pixlblade.storange.items.StorangeItem
 import net.pixlblade.storange.recipes.HammerRecipeSerializer
 
 // Main object for initializing all items.
@@ -22,6 +23,7 @@ object Storange : ModInitializer {
     // Items
     val Orange = Item(FabricItemSettings().group(StorangeGroup).food(FoodComponent.Builder().hunger(4).build()))
     val Hammer = HammerItem(FabricItemSettings().group(StorangeGroup).maxDamage(100))
+    val Storange = StorangeItem(FabricItemSettings().group(StorangeGroup))
     val IronPlate = ItemReg.make("iron_plate")
     val MiniSiliconWafer = ItemReg.make("mini_silicon_wafer")
     val Processor = ItemReg.make("processor")
@@ -39,6 +41,7 @@ object Storange : ModInitializer {
         // Items
         Registry.register(Registry.ITEM, ItemReg.makeID("orange"), Orange)
         Registry.register(Registry.ITEM, ItemReg.makeID("hammer"), Hammer)
+        Registry.register(Registry.ITEM, ItemReg.makeID("storange"), this.Storange)
         ItemReg.register(IronPlate, MiniSiliconWafer, Processor, ProcessorChip, SiliconWafer, Transistor, SiliconPellet)
 
         // Blocks

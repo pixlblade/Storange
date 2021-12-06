@@ -10,5 +10,6 @@
   "item.storange.silicon_wafer": "Silicon Wafer",
   "item.storange.transistor": "Transistor",
   "item.storange.silicon_pellet": "Silicon Pellet",
-  "block.storange.silicon_shaper": "Silicon Shaper"
+  "block.storange.silicon_shaper": "Silicon Shaper",
+  "item.storange.storange": "Storange"
 }

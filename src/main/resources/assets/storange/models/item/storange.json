@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "storange:item/storange/0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "stored": 0.5
+      },
+      "model": "storange:item/storange/1"
+    },
+    {
+      "predicate": {
+        "stored": 1
+      },
+      "model": "storange:item/storange/2"
+    }
+  ]
+}

@@ -23,6 +23,12 @@
         "adapter": "kotlin",
         "value": "net.pixlblade.storange.Storange"
       }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "net.pixlblade.storange.StorangeClient"
+      }
     ]
   },
   "depends": {
