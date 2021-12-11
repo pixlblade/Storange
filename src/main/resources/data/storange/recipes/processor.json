@@ -1,22 +1,22 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#S#",
-        "RZR",
-        "#S#"
+        "#R#",
+        "SLS",
+        "#R#"
     ],
     "key": {
         "#": {
             "item": "storange:processor_chip"
         },
-        "S": {
-            "item": "storange:silicon_wafer"
-        },
         "R": {
             "item": "minecraft:redstone"
         },
-        "Z": {
+        "S": {
             "item": "minecraft:slime_ball"
+        },
+        "L": {
+            "item": "storange:iron_plate"
         }
     },
     "result": {
